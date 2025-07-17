@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.ssn.oms.controllers.DepartmentController" spacing="15">
+    <Label text="Department Management" styleClass="header-label" />
+
+    <HBox spacing="10">
+        <Label text="Department Name:" />
+        <TextField fx:id="deptNameField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Department Head:" />
+        <TextField fx:id="locationField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Number of Employees:" />
+        <TextField fx:id="txtEmployeeCount" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="Add Department" onAction="#handleAddDepartment" />
+        <Button text="Update Department" onAction="#handleUpdateDepartment" />
+        <Button text="Delete Department" onAction="#handleDeleteDepartment" />
+    </HBox>
+
+    <TableView fx:id="departmentTable">
+        <columns>
+            <TableColumn fx:id="deptIdColumn" text="Department ID" />
+            <TableColumn fx:id="deptNameColumn" text="Department Name" />
+            <TableColumn fx:id="locationColumn" text="Location" />
+        </columns>
+    </TableView>
+</VBox>

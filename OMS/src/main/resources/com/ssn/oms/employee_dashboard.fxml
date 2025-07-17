@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.ssn.oms.controllers.EmployeeController" spacing="15" padding="10">
+    <Label text="Employee Dashboard" styleClass="-label" />
+
+    <HBox spacing="10">
+        <Label text="Employee Name:" />
+        <TextField fx:id="employeeNameField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Position:" />
+        <TextField fx:id="positionField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Department:" />
+        <TextField fx:id="departmentField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Salary:" />
+        <TextField fx:idsalaryField" />
+    </HBox>
+
+   HBox spacing="10">
+        <Button text="Add Employee" onAction="#handleAddEmployee" />
+        <Button text="Update Employee" onAction="#handleUpdateEmployee" />
+        <Button text="Delete Employee" onAction="#handleDeleteEmployee" />
+    </HBox>
+
+    <TableView fx:id="employeeTable">
+        <columns            <TableColumn fx:id="empIdColumn" text="Employee ID" />
+        <TableColumn fx:id="empNameColumn" text="Employee Name" />
+        <TableColumn fx:id="positionColumn" text="Position" />
+        <TableColumn fx:iddepartmentColumn" text="Department" />
+            <TableColumn fx:id="salaryColumn" text="Salary" />
+ </columns>
+    </TableView>
+</VBox>

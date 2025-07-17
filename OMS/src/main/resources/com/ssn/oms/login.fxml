@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssn.oms.controllers.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+
+    <VBox alignment="CENTER" layoutX="79.0" layoutY="35.0" prefHeight="300.0" prefWidth="400.0" spacing="20" styleClass="root-pane">
+        <!-- Title Text -->
+        <Text styleClass="title-text" text="Office Management System" />
+        <Text styleClass="subtitle-text" text="Login" />
+
+        <!-- GridPane for Username and Password Fields -->
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+            <Label styleClass="label-text" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="usernameField" promptText="Enter your username" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label styleClass="label-text" text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <PasswordField fx:id="passwordField" promptText="Enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <!-- Column Constraints for Equal Widths -->
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" minWidth="100" />
+                <ColumnConstraints halignment="LEFT" minWidth="200" />
+            </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <!-- Login Button and Error Message Label -->
+        <Button fx:id="loginButton" maxWidth="150" onAction="#handleLogin" styleClass="login-button" text="Login" />
+        <Label fx:id="errorMessage" styleClass="error-message" textFill="red" visible="false" />
+    </VBox>
+
+    <!-- Padding for the AnchorPane -->
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+</AnchorPane>

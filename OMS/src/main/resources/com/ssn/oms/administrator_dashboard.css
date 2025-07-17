@@ -1,0 +1,35 @@
+/* dashboard.css */
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.sub-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+
+.button {
+    -fx-background-color: #0073e6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 140;
+    -fx-pref-height: 40;
+    -fx-background-radius: 5;
+}
+
+.logout-button {
+    -fx-background-color: #e60000;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.quick-button {
+    -fx-background-color: #0073e6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 130;
+}

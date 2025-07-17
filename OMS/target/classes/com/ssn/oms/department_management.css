@@ -1,0 +1,62 @@
+/* department_management.css */
+
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: Arial, sans-serif;
+}
+
+.form-container {
+    -fx-padding: 15;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.action-button {
+    -fx-padding: 10 20;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.action-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.action-button:pressed {
+    -fx-background-color: #3e8e41;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #4CAF50;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 8 10;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}

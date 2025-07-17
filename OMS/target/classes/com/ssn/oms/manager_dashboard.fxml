@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.ssn.oms.controllers.ManagerDashboardController" stylesheets="@manager_dashboard.css">
+    <VBox alignment="TOP_CENTER" spacing="20" layoutX="20" layoutY="20" prefWidth="600" prefHeight="400">
+        <Label text="Manager Dashboard" styleClass="header"/>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button text="Create Milestone" fx:id="createMilestoneBtn" onAction="#handleCreateMilestone"/>
+            <Button text="Assign Task" fx:id="assignTaskBtn" onAction="#handleAssignTask"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button text="Approve Leave" fx:id="approveLeaveBtn" onAction="#handleApproveLeave"/>
+            <Button text="Schedule Meeting" fx:id="scheduleMeetingBtn" onAction="#handleScheduleMeeting"/>
+        </HBox>
+
+        <Button text="Generate Report" fx:id="generateReportBtn" onAction="#handleGenerateReport" alignment="CENTER"/>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button text="Change Password" fx:id="changePasswordBtn" onAction="#handleChangePassword"/>
+            <Button text="Set Theme" fx:id="setThemeBtn" onAction="#handleSetTheme"/>
+        </HBox>
+
+        <!-- Added ListView for displaying assigned tasks -->
+        <Label text="Assigned Tasks" styleClass="subheader"/>
+        <ListView fx:id="taskListView" prefHeight="200" prefWidth="560" />
+    </VBox>
+</AnchorPane>
